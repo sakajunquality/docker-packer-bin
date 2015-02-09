@@ -90,10 +90,10 @@ Here is a slightly modified version of the original
 ```
 
 Its defining 2 variables:
-- **psPath** : publish settngs file patch
+- **psPath** : publish settings file patch
 - **sn** : Subscription Name, this is the string we used inside of the publish settings xml.
 ```
-packer -var sn=YOURNAME -validater psPath=./YOURNAME.publishsettings packer-azure.json
+packer validate -var sn=YOURNAME -var psPath=./YOURNAME.publishsettings packer-azure.json
 ```
 
 ## Storage Account
