@@ -15,7 +15,7 @@ RUN curl -L https://github.com/sequenceiq/packer/releases/download/v0.8.7/packer
 RUN curl -L https://github.com/sequenceiq/packer/releases/download/v0.8.7/packer-builder-googlecompute-Linux.tgz \
     | tar -xzv -C /usr/local/bin/
 
-RUN curl -L https://github.com/sequenceiq/packer/releases/download/v0.8.7/packer-builder-openstack-Linux.tgz \
+RUN curl -sL https://github.com/sequenceiq/packer/releases/download/v0.8.7/packer-builder-openstack-Linux.tgz \
     | tar -xzv -C /usr/local/bin/
 
 RUN curl -L https://github.com/sequenceiq/packer-postprocessor-generator/releases/download/v0.8.7/packer-post-processor-generator-Linux.tgz \
