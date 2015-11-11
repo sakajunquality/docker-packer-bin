@@ -1,6 +1,6 @@
 FROM gliderlabs/alpine:3.1
 
-RUN apk-install curl
+RUN apk-install curl bash
 
 
 RUN curl -Lk https://circle-artifacts.com/gh/sequenceiq/packer/35/artifacts/0/tmp/circle-artifacts.d20CmZY/packer.tgz \
