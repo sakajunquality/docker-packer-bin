@@ -15,3 +15,4 @@ dockerhub-tag:
 
 integration-test: build-dev
 	docker run --rm sequenceiq/packer:dev version
+	docker run --rm --entrypoint docker sequenceiq/packer:dev --version
