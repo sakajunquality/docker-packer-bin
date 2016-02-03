@@ -6,7 +6,7 @@ RUN apk-install curl bash
 RUN curl -Lk https://circle-artifacts.com/gh/sequenceiq/packer/35/artifacts/0/tmp/circle-artifacts.d20CmZY/packer.tgz \
     | tar -xzv -C /usr/local/bin
 
-RUN curl -Lk https://github.com/sequenceiq/packer-azure/releases/download/v2/packer.tgz \
+RUN curl -Lk https://github.com/sequenceiq/packer-azure/releases/download/v3/packer.tgz \
     | tar -xzv -C /usr/local/bin
 
 RUN curl -L https://github.com/sequenceiq/packer/releases/download/v0.8.7/packer-builder-amazon-ebs-Linux.tgz \
