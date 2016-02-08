@@ -12,6 +12,9 @@ RUN curl -Lk https://github.com/sequenceiq/packer-azure/releases/download/v3/pac
 RUN curl -L https://github.com/sequenceiq/packer/releases/download/v0.8.7/packer-builder-amazon-ebs-Linux.tgz \
     | tar -xzv -C /usr/local/bin/
 
+RUN curl -Lk https://s3-eu-west-1.amazonaws.com/sequenceiq/packer-builder-amazon-ebs.tgz \
+    | tar -xzv -C /usr/local/bin
+
 RUN curl -L https://github.com/sequenceiq/packer/releases/download/v0.8.7/packer-builder-googlecompute-Linux.tgz \
     | tar -xzv -C /usr/local/bin/
 
