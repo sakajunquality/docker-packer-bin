@@ -6,11 +6,15 @@ RUN apk-install curl bash
 RUN curl -Lk https://circle-artifacts.com/gh/sequenceiq/packer/35/artifacts/0/tmp/circle-artifacts.d20CmZY/packer.tgz \
     | tar -xzv -C /usr/local/bin
 
-RUN curl -Lk https://github.com/sequenceiq/packer-azure/releases/download/v4/packer.tgz \
+RUN curl -Lk https://github.com/sequenceiq/packer-azure/releases/download/v5/packer.tgz \
     | tar -xzv -C /usr/local/bin
 
 RUN curl -L https://github.com/sequenceiq/packer/releases/download/v0.8.7/packer-builder-amazon-ebs-Linux.tgz \
     | tar -xzv -C /usr/local/bin/
+
+## seoul region built from packer master TODO: merge with seq specific MOCKing
+RUN curl -Lk https://s3-eu-west-1.amazonaws.com/sequenceiq/packer-builder-amazon-ebs.tgz \
+    | tar -xzv -C /usr/local/bin
 
 RUN curl -L https://github.com/sequenceiq/packer/releases/download/v0.8.7/packer-builder-googlecompute-Linux.tgz \
     | tar -xzv -C /usr/local/bin/
